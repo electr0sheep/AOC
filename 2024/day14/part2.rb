@@ -31,7 +31,7 @@ def print_alleged_tree(robots)
     array[position[1]][position[0]] = 'X'
   end
 
-  puts array
+  array.each { |a| puts a.join('') }
 end
 
 def no_robots_occupy_same_space?(robots)
